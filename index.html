@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@600&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="styles.css?v=10">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"Mrs. Iyengar's Kitchen","servesCuisine":["South Indian","Iyengar","Vegetarian"],"priceRange":"₹1–200","telephone":"+91-98801-86251","image":"images/storefront.jpg","address":{"@type":"PostalAddress","streetAddress":"Fourth floor, The Terminal building, Survey 61/2, Hoodi Main Rd, Ayyappa Nagar","addressLocality":"Krishnarajapuram, Bengaluru","addressRegion":"Karnataka","postalCode":"560048","addressCountry":"IN"},"openingHours":"Mo-Su 07:30-22:30","sameAs":["https://www.instagram.com/mrs_iyengars_kitchen/"]}
 </script>
@@ -261,24 +261,44 @@
   <div class="wrap">
     <div class="head-center reveal">
       <span class="eyebrow">Reviews</span>
-      <h2>What our guests say</h2>
+      <h2>Loved by our guests</h2>
+      <p class="sub">A few of the reviews guests have left on our Google profile.</p>
     </div>
-    <div class="rev-grid">
-      <div class="rating-card reveal">
-        <svg class="mandala" style="color:#f5c83a"><use href="#mandala"/></svg>
-        <span class="kn">ಧನ್ಯವಾದ</span>
-        <div class="lead-q">Every plate, <em>made with care.</em></div>
-        <p>Guests come for the authentic Iyengar taste and the calm, peaceful setting. Read what they say on Google.</p>
-        <a class="btn btn-light" data-greviews href="https://www.google.com/search?q=Mrs+Iyengar%27s+Kitchen+KR+Puram+reviews" target="_blank" rel="noopener">Read guest reviews</a>
-      </div>
-      <div class="quote-card reveal" id="gquote">
-        <span class="qmark">“</span>
-        <div class="stars">★★★★★</div>
-        <blockquote>Ideal place, ideal location, good staff, satvik food, reasonable prices.</blockquote>
-        <div class="who"><div class="avatar">G</div><div><b>Google reviewer</b><small>Google review</small></div></div>
-        <small class="g-src" hidden>Reviews from Google</small>
-        <a class="btn btn-maroon" data-greviews href="https://www.google.com/search?q=Mrs+Iyengar%27s+Kitchen+KR+Puram+reviews" target="_blank" rel="noopener">Write a review</a>
-      </div>
+    <div class="greviews">
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>Very good place. Just came first time and loved the view atmosphere and food. Had curd avalakhi and it was so good. Tried another dish that too was super good. Love the vibes</blockquote>
+        <figcaption><span class="av" style="--c:#8f1d1d">D</span><span><b>Deepak Chahar</b><small>Local Guide · Google</small></span></figcaption>
+      </figure>
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>The no onion no garlic aspect was noticeable and added a unique touch to the meal. What stood out most to me was the Puliyogare, which had a comforting and genuine flavor that felt true to tradition.</blockquote>
+        <figcaption><span class="av" style="--c:#c25e0b">S</span><span><b>Sudipta Lodh</b><small>Google review</small></span></figcaption>
+      </figure>
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>This place is highly underrated compared to others. I ordered the Dosa and Hayagriva, and both were delicious. The atmosphere is very good and the prices are fair. Definitely a hidden gem!</blockquote>
+        <figcaption><span class="av" style="--c:#1d6b45">K</span><span><b>Kiran Kharvi</b><small>Local Guide · Google</small></span></figcaption>
+      </figure>
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>The food and the atmosphere are awesome here. For the first time, I felt dishes without garlic and onion tastes like heaven. The most accessible location for Sathvik food near KR Puram...</blockquote>
+        <figcaption><span class="av" style="--c:#4a0c0c">S</span><span><b>Shivaprasad Parakkat</b><small>Local Guide · Google</small></span></figcaption>
+      </figure>
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>The one place where I can have food, without fears of having stomach upset. Absolutely enjoying the food. Very polite and hospitable. Happy to have found my safe place for pitstops.</blockquote>
+        <figcaption><span class="av" style="--c:#b8860b">V</span><span><b>Vaishnavi N</b><small>Local Guide · Google</small></span></figcaption>
+      </figure>
+      <figure class="grev reveal">
+        <div class="grev-top"><span class="stars" aria-label="5 out of 5 stars">★★★★★</span><span class="gmark" aria-label="Google review">G</span></div>
+        <blockquote>Really loved and enjoyed the food and the ambience at this place you feel very special and with view. Must try Hayagreeva dessert.</blockquote>
+        <figcaption><span class="av" style="--c:#7a1616">B</span><span><b>Balaji Reddy</b><small>Local Guide · Google</small></span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-actions reveal">
+      <a class="btn btn-maroon" data-greviews href="https://share.google/h7DfIDelDStGfqVe3" target="_blank" rel="noopener"><span class="gmark gmark-sm" aria-hidden="true">G</span>Read all Google reviews</a>
+      <a class="btn btn-primary" href="https://www.vouchiq.in/review/mrs-iyengar-s-kitchen" target="_blank" rel="noopener"><svg><use href="#i-heart"/></svg>Write a review</a>
     </div>
   </div>
 </section>
