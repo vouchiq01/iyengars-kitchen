@@ -113,12 +113,12 @@ document.querySelectorAll('#yr, .yr').forEach(el => el.textContent = yr);
 const groups = new Map();
 document.querySelectorAll('.reveal').forEach(el => {
   const n = groups.get(el.parentElement) || 0;
-  el.style.transitionDelay = (n % 4) * 90 + 'ms';
+  el.style.transitionDelay = (n % 3) * 50 + 'ms';
   groups.set(el.parentElement, n + 1);
 });
 const io = new IntersectionObserver(entries => entries.forEach(en => {
-  if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-}), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  if (en.isIntersecting) { const t = en.target; t.classList.add('in'); io.unobserve(t); setTimeout(() => t.style.transitionDelay = '', 700); }
+}), { threshold: 0, rootMargin: '0px 0px 20% 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 // Full menu: search box and section chips that follow your scroll
