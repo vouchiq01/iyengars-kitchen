@@ -40,16 +40,13 @@ if (location.hash && !document.getElementById('menuSearch')) {
   if (t) setTimeout(() => t.scrollIntoView(), 60);
 }
 
-// Nav turns solid after scrolling; phone action bar stays away while the hero buttons are on screen
+// Nav turns solid after scrolling; phone action bar stays away until you scroll past the hero buttons
 const nav = document.getElementById('topnav');
 const mbar = document.querySelector('.mbar');
 const heroCta = document.querySelector('.hero .cta');
 const onScroll = () => {
   nav.classList.toggle('scrolled', scrollY > 40);
-  if (heroCta && mbar) {
-    const r = heroCta.getBoundingClientRect();
-    mbar.classList.toggle('away', r.bottom > 0 && r.top < innerHeight);
-  }
+  if (heroCta && mbar) mbar.classList.toggle('away', heroCta.getBoundingClientRect().bottom > 0);
 };
 addEventListener('scroll', onScroll, { passive: true });
 addEventListener('resize', onScroll);
